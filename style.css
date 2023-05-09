@@ -1,0 +1,15 @@
+div{
+    background-color: white;
+    height: 16px; width: 16px;
+}
+
+body{
+    background-color: orchid;
+}
+
+#wrapper{
+    display:grid;
+    grid-gap: .5em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
