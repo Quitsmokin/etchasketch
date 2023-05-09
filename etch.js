@@ -14,7 +14,7 @@ function resizer() {
     if(row > 100) {
         row = window.prompt("Too many rows pick a smaller number", 0);
    }
-    //you need to reset the grid or else every remake will just grid items
+    //you need to reset the grid or else every remake will just add grid items
     reset();
     makeCol(col,row);
     hoverColor();
@@ -35,7 +35,6 @@ function makeCol(collen,rowsize){
     //creating the total amount of cells needed and labeling them 
     for(let i = 0; i<(collen*rowsize); i++){
         const column = document.createElement("div");
-        column.className = "grid"; 
         column.classList.add('grid-item');
         elem.appendChild(column); 
     }
